@@ -1,8 +1,13 @@
 import Content from "../components/Content";
+import ScrollCard from "../components/ScrollCard";
 
 const Home = () => {
     return (
-        <Content/>
+        <div className="container">
+            <Content/>
+            <ScrollCard/>
+        </div>
+
     )
 }
 
