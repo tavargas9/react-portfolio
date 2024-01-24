@@ -3,7 +3,7 @@ import ScrollCard from "../components/ScrollCard";
 
 const Home = () => {
     return (
-        <div className="container">
+        <div className="mt-10">
             <Content/>
             <ScrollCard/>
         </div>
