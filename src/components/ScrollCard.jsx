@@ -4,6 +4,7 @@ export default function ScrollCard() {
   return (
     <Flowbite>
         <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+            <h2>My Projects</h2>
         <Carousel slide={false}>
             <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
             <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
