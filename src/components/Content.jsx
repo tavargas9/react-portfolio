@@ -1,6 +1,7 @@
 import { faCode, faCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { elementType } from "prop-types";
+import tj2 from "../assets/tj2.png"
 
 export default function Content() {
     const scrollTo = () => {
@@ -45,7 +46,7 @@ export default function Content() {
         <div className="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             className="w-xl max-w-full rounded-full bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-            src="src/assets/tj2.png"
+            src={tj2}
             alt=""
           />
         </div>
