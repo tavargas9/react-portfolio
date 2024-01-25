@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
                 Porfolio
             </h2>
             <p className="text-lg font-semibold text-blue-900 mb-12">(Aug 2023-Present)</p>
-            <div className="flex flex-wrap gap-12 justify-evenly px-20">
+            <div className="flex flex-wrap gap-12 justify-evenly md:px-20">
             {projects.map((project) => (
                 <Card className="mt-6 w-96 hover:shadow-blue-800 transition ease-in">
                     <CardHeader color="blue-gray" className="relative h-56">
