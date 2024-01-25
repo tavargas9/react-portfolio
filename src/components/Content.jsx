@@ -1,7 +1,13 @@
 import { faCode, faCircleDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { elementType } from "prop-types";
 
 export default function Content() {
+    const scrollTo = () => {
+        const element = document.getElementById('featured-projects');
+        element.scrollIntoView({ behavior: 'smooth' });
+    };
+
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
@@ -19,7 +25,10 @@ export default function Content() {
                 <span className='text-orange-500'> University of Utah</span> Coding Bootcamp.
               </p>
               <div className='mt-8 flex justify-evenly items-center'>
-                <button className='group flex items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-gradient-to-r from-blue-500 to-orange-500 enabled:hover:bg-gradient-to-l focus:ring-blue-200 dark:focus:ring-blue-800 rounded-full focus:ring-2'>
+                <button 
+                className='group flex items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-gradient-to-r from-blue-500 to-orange-500 enabled:hover:bg-gradient-to-l focus:ring-blue-200 dark:focus:ring-blue-800 rounded-full focus:ring-2'
+                onClick={scrollTo}
+                >
                     <span className='items-center flex justify-center bg-white text-blue-900 transition-all duration-75 ease-in group-enabled:group-hover:bg-opacity-0 group-enabled:group-hover:text-inherit dark:bg-gray-900 dark:text-white w-full rounded-full text-sm px-4 py-2 border border-transparent'>
                         Featured Projects <FontAwesomeIcon icon={faCode} className="ml-2"/>
                     </span>
