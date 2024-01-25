@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx';
 import './index.css'
 
 import { ThemeProvider } from '@material-tailwind/react';
+import Portfolio from './pages/Portfolio.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home/>,
+      },
+      {
+        path: '/portfolio',
+        element: <Portfolio />,
       },
     ],
   },

@@ -86,11 +86,11 @@ export default function Nav() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-blue-900 hover:text-orange-500 transition ease-in">
+          <a href="/portfolio" className="text-sm font-semibold leading-6 text-blue-900 hover:text-orange-500 transition ease-in">
             Portfolio
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-blue-900 hover:text-orange-500 transition ease-in">
-            Resume
+          <a href="/" className="text-sm font-semibold leading-6 text-blue-900 hover:text-orange-500 transition ease-in">
+            Home
           </a>
         </Popover.Group>
       </nav>
@@ -145,16 +145,16 @@ export default function Nav() {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="/portfolio"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-900 hover:bg-gray-50"
                 >
                   Portfolio
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-900 hover:bg-gray-50"
                 >
-                  Resume
+                  Home
                 </a>
               </div>
             </div>

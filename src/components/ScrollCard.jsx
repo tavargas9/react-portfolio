@@ -41,7 +41,7 @@ export default function ScrollCard() {
 
   return (  
     <div className='flex flex-col items-center'>
-        <h2 className='text-4xl font-bold mb-5 text-blue-800'>
+        <h2 className='text-4xl font-bold mb-5 text-blue-800' id='featured-projects'>
             Featured Projects
         </h2>
         <a href='/portfolio' className='mb-5'>
@@ -53,7 +53,7 @@ export default function ScrollCard() {
                 </span>
             </button>
         </a>
-        <div className='w-full md:w-3/4 h-screen md:h-[700px] mb-12' id='featured-projects'>
+        <div className='w-full md:w-3/4 h-screen md:h-[700px] mb-12' >
             <Carousel 
             transition={{ duration:1 }} 
             autoplay={true} 
