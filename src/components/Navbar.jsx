@@ -33,7 +33,7 @@ export default function Nav() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="group h-8 w-auto bg-gradient-to-r from-blue-500 to-orange-500 hover:bg-gradient-to-l text-transparent bg-clip-text focus:ring-blue-200 text-4xl ml-3 font-bold transition ease-in">
-              tav<span className='text-orange-500 group-hover:text-blue-800'>.</span>
+              tav<span className='text-orange-500 group-hover:text-blue-700'>.</span>
             </span>
           </a>
         </div>
