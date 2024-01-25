@@ -40,7 +40,7 @@ export default function Nav() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-blue-900"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -99,13 +99,13 @@ export default function Nav() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
-              <span className="h-8 w-auto text-blue-800 text-4xl ml-3 font-bold hover:text-orange-400 transition ease-in">
-                tav<span className='text-orange-400'>.</span>
+              <span className="group h-8 w-auto bg-gradient-to-r from-blue-500 to-orange-500 hover:bg-gradient-to-l text-transparent bg-clip-text focus:ring-blue-200 text-4xl ml-3 font-bold transition ease-in">
+                tav<span className='text-orange-500 group-hover:text-blue-800'>.</span>
               </span>
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-blue-900"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -118,7 +118,7 @@ export default function Nav() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-blue-900 hover:bg-gray-50">
                         Contact
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -132,8 +132,11 @@ export default function Nav() {
                             as="a"
                             href={item.href}
                             target='_blank'
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="flex justify-start items-center rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-blue-900 hover:bg-gray-50"
                           >
+                            <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg">
+                              <FontAwesomeIcon icon={item.icon} className="h-5 w-5 text-blue-900 group-hover:text-orange-500" aria-hidden="true" />
+                            </div>
                             {item.name}
                           </Disclosure.Button>
                         ))}
@@ -143,13 +146,13 @@ export default function Nav() {
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-900 hover:bg-gray-50"
                 >
                   Portfolio
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-900 hover:bg-gray-50"
                 >
                   Resume
                 </a>

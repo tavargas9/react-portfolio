@@ -8,13 +8,13 @@ export default function Content() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg lg:mt-16">
-              <h2 className="text-4xl font-semibold leading-7 text-blue-800">
+              <h1 className="text-4xl font-semibold leading-7 text-blue-800">
                 Tomas Antonio Vargas
-                </h2>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-blue-500 inline-block text-transparent bg-clip-text sm:text-3xl">Web Developer</h1>
+                </h1>
+              <h2 className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-blue-500 inline-block text-transparent bg-clip-text sm:text-3xl">Full Stack Developer</h2>
               <p className="mt-6 text-xl leading-8 text-blue-900">
                 Currently residing in <span className='text-orange-500'>Salt Lake City, Utah</span>
-                , and originally from the New York City metro area, Tomas' web dev journey started after graduating with a B.S. in Business 
+                , and originally from the New York City metro area, my dev journey started after graduating with a B.S. in Business 
                 from <span className='text-orange-500'>Syracuse University</span> and attending the 
                 <span className='text-orange-500'> University of Utah</span> Coding Bootcamp.
               </p>
