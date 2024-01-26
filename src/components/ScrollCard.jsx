@@ -1,6 +1,8 @@
-import { Carousel, Typography, Button } from '@material-tailwind/react'
+import { Carousel, Typography, Button } from '@material-tailwind/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import emp_tracker from '../assets/emp_tracker.png'
+import snapi from '../assets/snapi.png'
 
 export default function ScrollCard() {
 
@@ -20,7 +22,7 @@ export default function ScrollCard() {
             name: 'Employee Tracker', 
             href: 'https://github.com/tavargas9/employee-tracker', 
             desc: 'A MySQL-based CLI database management tool', 
-            img: 'https://private-user-images.githubusercontent.com/142061829/298175383-2c22948a-4371-4a1c-8a76-3903e931ab6e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNDIyMjQsIm5iZiI6MTcwNjE0MTkyNCwicGF0aCI6Ii8xNDIwNjE4MjkvMjk4MTc1MzgzLTJjMjI5NDhhLTQzNzEtNGExYy04YTc2LTM5MDNlOTMxYWI2ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwMDE4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMjIzMzY0ODNhMmU4NGEzZjQzZTg2Nzg1MWY5ZGJmYmM2ZWUwMzkwY2FmMTg2OTk0YWUwODg1OTE5NmFkOGM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.tvModBd30SAm08xFPvh7r4aWFNNcwu3ykD78JFMdtQw',
+            img:   emp_tracker,
             repo: 'https://github.com/tavargas9/employee-tracker',
         },
         { 
@@ -34,7 +36,7 @@ export default function ScrollCard() {
             name: 'Social Network API',
             href: 'https://github.com/tavargas9/social-network-API',
             desc: 'An Express.js and MongoDB based API for a social network web appilcation',
-            img: 'https://private-user-images.githubusercontent.com/142061829/299531917-a2f6bb77-0eb3-451e-95e2-22125c9614bd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNTUwNzIsIm5iZiI6MTcwNjE1NDc3MiwicGF0aCI6Ii8xNDIwNjE4MjkvMjk5NTMxOTE3LWEyZjZiYjc3LTBlYjMtNDUxZS05NWUyLTIyMTI1Yzk2MTRiZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwMzUyNTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MDQ3ZmZlOGFmOWJkNDczMjViMDcxOGQ3MjYxZGUxNmQ3Zjg1OGUyZDEwM2VlNjI4ZDgwZWM5MjUwYjM0YWZjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XXg2n7-sm57LUjynKWf2VlOiCm_EsE743Ow-nOs1OyQ',
+            img:   snapi,
             repo: 'An Express.js and MongoDB based API for a social network web appilcation'
         }
     ];

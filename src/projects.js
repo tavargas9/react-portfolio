@@ -1,79 +1,88 @@
+import snapi from './assets/snapi.png'
+import js_quiz from './assets/js_quiz.gif'
+import readme from './assets/readme.png'
+import emp_tracker from './assets/emp_tracker.png'
+import dish_disc from './assets/dish_disc.png'
+import ecom_api from './assets/ecom_api.png'
+import notetakr from './assets/notetakr.png'
+import wd_sched from './assets/wd_sched.png'
+
 const projects = [
     { 
         name: 'Weather Daddy', 
         href: 'https://tavargas9.github.io/weather-daddy/', 
         desc: 'A simple weather dashboard web application built with jQuery and Tailwind', 
-        img: 'https://github.com/tavargas9/weather-daddy/blob/main/assets/icons/Screenshot%202023-10-03%20at%201.53.38%20AM.png?raw=true',
+        img:  'https://github.com/tavargas9/weather-daddy/blob/main/assets/icons/Screenshot%202023-10-03%20at%201.53.38%20AM.png?raw=true',
         repo: 'https://github.com/tavargas9/weather-daddy',
     },
     { 
         name: 'Employee Tracker', 
         href: 'https://github.com/tavargas9/employee-tracker', 
         desc: 'A MySQL-based CLI database management tool', 
-        img: 'https://private-user-images.githubusercontent.com/142061829/298175383-2c22948a-4371-4a1c-8a76-3903e931ab6e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNDIyMjQsIm5iZiI6MTcwNjE0MTkyNCwicGF0aCI6Ii8xNDIwNjE4MjkvMjk4MTc1MzgzLTJjMjI5NDhhLTQzNzEtNGExYy04YTc2LTM5MDNlOTMxYWI2ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwMDE4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMjIzMzY0ODNhMmU4NGEzZjQzZTg2Nzg1MWY5ZGJmYmM2ZWUwMzkwY2FmMTg2OTk0YWUwODg1OTE5NmFkOGM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.tvModBd30SAm08xFPvh7r4aWFNNcwu3ykD78JFMdtQw',
+        img:   emp_tracker,
         repo: 'https://github.com/tavargas9/employee-tracker',
     },
     { 
         name: 'Movie Soundtrack Identifier', 
         href: 'https://tavargas9.github.io/movie-soundtrack-id/', 
         desc: 'Find and listen to the soundtracks of your favorite movies', 
-        img: 'https://github.com/tavargas9/movie-soundtrack-id/blob/main/assets/images/Screenshot%202023-10-12%20at%2010.17.08%20PM.png?raw=true',
+        img:  'https://github.com/tavargas9/movie-soundtrack-id/blob/main/assets/images/Screenshot%202023-10-12%20at%2010.17.08%20PM.png?raw=true',
         repo: 'https://github.com/tavargas9/movie-soundtrack-id', 
     },
     {
         name: 'Social Network API',
         href: 'https://github.com/tavargas9/social-network-API',
         desc: 'An Express.js and MongoDB based API for a social network web appilcation',
-        img: 'https://private-user-images.githubusercontent.com/142061829/299531917-a2f6bb77-0eb3-451e-95e2-22125c9614bd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNTUwNzIsIm5iZiI6MTcwNjE1NDc3MiwicGF0aCI6Ii8xNDIwNjE4MjkvMjk5NTMxOTE3LWEyZjZiYjc3LTBlYjMtNDUxZS05NWUyLTIyMTI1Yzk2MTRiZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwMzUyNTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MDQ3ZmZlOGFmOWJkNDczMjViMDcxOGQ3MjYxZGUxNmQ3Zjg1OGUyZDEwM2VlNjI4ZDgwZWM5MjUwYjM0YWZjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XXg2n7-sm57LUjynKWf2VlOiCm_EsE743Ow-nOs1OyQ',
+        img:   snapi,
         repo: 'https://github.com/tavargas9/social-network-API',
     },
     {
         name: 'DishDiscovery',
         href: 'https://secure-hollows-55574-70e0c84bc001.herokuapp.com/',
         desc: 'The ultimate hub for chefs and aspiring chefs to find new recipes, share culinary masterpieces, and connect with a community that shares a love for cooking',
-        img: 'https://private-user-images.githubusercontent.com/142133969/288938028-d1f1fd2d-e8c1-404d-9cf1-6b30b4314222.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNjIwMzcsIm5iZiI6MTcwNjE2MTczNywicGF0aCI6Ii8xNDIxMzM5NjkvMjg4OTM4MDI4LWQxZjFmZDJkLWU4YzEtNDA0ZC05Y2YxLTZiMzBiNDMxNDIyMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwNTQ4NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzE1ZTNjMWQyYTE2NDBhNDhjNzcxMWY5Yjc5ZjA5YmM4ODY3MmJkZmUxZTQ5NGI3NDI5MzhhMzdmYzhlNDZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ras8U3_08Lh9GSCr3csdrKap51dVB1DSMf8Xtigt-R4',
+        img:   dish_disc,
         repo: 'https://github.com/tavargas9/DishDiscovery',
     },
     {
         name: 'E-Commerce Backend API',
         href: 'https://github.com/tavargas9/E-Commerce-Backend',
         desc: 'An Express.js-based REST API for building out a functional back end for an e-commerce website',
-        img: 'https://private-user-images.githubusercontent.com/142061829/299543146-91f964f5-8df1-4350-bb35-3e1127b9fbb2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNjIxNzksIm5iZiI6MTcwNjE2MTg3OSwicGF0aCI6Ii8xNDIwNjE4MjkvMjk5NTQzMTQ2LTkxZjk2NGY1LThkZjEtNDM1MC1iYjM1LTNlMTEyN2I5ZmJiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwNTUxMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZTY4MjU5NDZkZTliNWUwZjRlNmRhNzRmOTA1NGY5Y2UwYmM5MzkzZTBkMGZmMmEzZGExZDFkNDYwZDk1MDkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5zT-6A4W5AA3V9pXogRDqbY9Q1MhqMVAFQQ0thcd8sQ',
+        img:   ecom_api,
         repo: 'https://github.com/tavargas9/E-Commerce-Backend',
     },
     {
         name: 'NoteTakr',
         href: 'https://notetakr-8b74dec0dae2.herokuapp.com/',
         desc: 'A simple note taking application using Express.js',
-        img: 'https://private-user-images.githubusercontent.com/142061829/299543503-7b3da6e8-0204-422c-a109-d1a8a6c889ce.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNjIzMDEsIm5iZiI6MTcwNjE2MjAwMSwicGF0aCI6Ii8xNDIwNjE4MjkvMjk5NTQzNTAzLTdiM2RhNmU4LTAyMDQtNDIyYy1hMTA5LWQxYThhNmM4ODljZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwNTUzMjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMmNmYWM4N2IyMjExMmJiMmQ2MmYzMzAxODRmNzIxYTI3ZTRmMzNiOTRhMmI4YzgyMTljNDMxY2M2MzYwMjBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.CSCbofOiDHhbzFL81mn0sKarC0gSonL_6ZeCIbAgRBw',
+        img:   notetakr,
         repo: 'https://github.com/tavargas9/NoteTakr',
     },
     {
         name: 'SVG LogoMaker',
         href: 'https://github.com/tavargas9/SVG-LogoMaker',
         desc: 'A command line application for generating a custom SVG logo',
-        img: 'https://raw.githubusercontent.com/tavargas9/SVG-LogoMaker/main/lib/assets/screenshots/Screenshot%202023-11-02%20at%2012.10.47%20AM.png',
+        img:  'https://raw.githubusercontent.com/tavargas9/SVG-LogoMaker/main/lib/assets/screenshots/Screenshot%202023-11-02%20at%2012.10.47%20AM.png',
         repo: 'https://github.com/tavargas9/SVG-LogoMaker',
     },
     {
         name: 'README Generator',
         href: 'https://github.com/tavargas9/README-generator',
         desc: 'A command line application for generating a high-quality README file',
-        img: '',
+        img:   readme,
         repo: 'https://github.com/tavargas9/README-generator',
     },
     {
         name: 'Work Day Scheduler',
         href: 'https://tavargas9.github.io/work-day-scheduler/',
         desc: 'A simple daily planner application that allows the user to save items to their work day schedule on a per hour basis (9am-5pm).',
-        img: 'https://private-user-images.githubusercontent.com/142061829/270522621-79914004-b8c8-44a6-8a83-87a6427a55af.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNjI0NTksIm5iZiI6MTcwNjE2MjE1OSwicGF0aCI6Ii8xNDIwNjE4MjkvMjcwNTIyNjIxLTc5OTE0MDA0LWI4YzgtNDRhNi04YTgzLTg3YTY0MjdhNTVhZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwNTU1NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZTMxOTU0YzFmMjUzNTAyNzU1NjgwNWQxNTUzYTY2ZDBlZTAyNmJhYjM4NGNhOGNmZjQ1YWJmNjJkZWYzZGNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.aFmwXIW89Ezras55KgBkNAApYTGrIz6oXbGQ-raR7c8',
+        img:   wd_sched,
         repo: 'https://github.com/tavargas9/work-day-scheduler',
     },
     {
         name: 'JavaScript Quiz App',
         href: 'https://tavargas9.github.io/javascript-quiz-app/',
         desc: 'A timed quiz game with questions on basic JavaScript fundamentals.',
-        img: 'https://private-user-images.githubusercontent.com/142061829/268829515-3aec9f10-482c-4706-851c-98ea02e6f535.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYxNjI0OTgsIm5iZiI6MTcwNjE2MjE5OCwicGF0aCI6Ii8xNDIwNjE4MjkvMjY4ODI5NTE1LTNhZWM5ZjEwLTQ4MmMtNDcwNi04NTFjLTk4ZWEwMmU2ZjUzNS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNVQwNTU2MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ODljMzE5N2RmMTkzMzlhYTRjNTcwNjBjMzAwMzAyNGZlOGU5YmZmZGFlYmE1MDg3Njc2Yzg5MjJlYmNiMGNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.no_Yn0nwVDG6g00QcKI1gEN5Yw7z0Qp3JWYrTC5q2oo',
+        img:   js_quiz,
         repo: 'https://github.com/tavargas9/javascript-quiz-app',
     },
     {

@@ -59,7 +59,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
                             ripple={false}
                         >
                             <span className='items-center flex justify-center bg-white text-blue-900 transition-all duration-75 ease-in group-enabled:group-hover:bg-opacity-0 group-enabled:group-hover:text-inherit dark:bg-gray-900 dark:text-white w-full rounded-full text-sm px-4 py-2 border border-transparent'>
-                                Code <FontAwesomeIcon icon={faCode} className="ml-2"/>
+                                View Code <FontAwesomeIcon icon={faCode} className="ml-2"/>
                             </span> 
                         </Button>
                     </CardFooter>
