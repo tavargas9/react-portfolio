@@ -9,6 +9,10 @@ export default function Content() {
         element.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const linkToResume = () => {
+      window.open('https://docs.google.com/document/d/1GGgOg79XssZUwLwDPxBqFXk19thKYPebRwL9RNlLg0c/edit?usp=sharing', '_blank')
+    }
+
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
@@ -34,7 +38,10 @@ export default function Content() {
                         Featured Projects <FontAwesomeIcon icon={faCode} className="ml-2"/>
                     </span>
                 </button>
-                <button className='group flex items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-gradient-to-r from-blue-500 to-orange-500 enabled:hover:bg-gradient-to-l focus:ring-blue-200 dark:focus:ring-blue-800 rounded-full focus:ring-2'>
+                <button 
+                className='group flex items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-gradient-to-r from-blue-500 to-orange-500 enabled:hover:bg-gradient-to-l focus:ring-blue-200 dark:focus:ring-blue-800 rounded-full focus:ring-2'
+                onClick={linkToResume}
+                >
                     <span className='items-center flex justify-center bg-white text-blue-900 transition-all duration-75 ease-in group-enabled:group-hover:bg-opacity-0 group-enabled:group-hover:text-inherit dark:bg-gray-900 dark:text-white w-full rounded-full text-sm px-4 py-2 border border-transparent'>
                         Download Resume <FontAwesomeIcon icon={faCircleDown} className="ml-2"/>
                     </span>

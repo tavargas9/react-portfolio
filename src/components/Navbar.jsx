@@ -18,6 +18,7 @@ const products = [
   { name: 'GitHub', href: 'https://github.com/tavargas9', icon: faGithub },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/tomas-vargas/', icon: faLinkedin },
   { name: 'Email', href: 'mailto:tavargas9@gmail.com', icon: faEnvelope },
+  { name: 'Resume', href: 'https://docs.google.com/document/d/1GGgOg79XssZUwLwDPxBqFXk19thKYPebRwL9RNlLg0c/edit?usp=sharing', icon: faPersonSkiing },
 ]
 
 function classNames(...classes) {
