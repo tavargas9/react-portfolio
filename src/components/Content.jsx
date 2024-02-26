@@ -2,6 +2,7 @@ import { faCode, faCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { elementType } from "prop-types";
 import tj2 from "../assets/tj2.png"
+import Typewriter from 'typewriter-effect'
 
 export default function Content() {
     const scrollTo = () => {
@@ -22,7 +23,22 @@ export default function Content() {
               <h1 className="text-4xl font-semibold leading-7 text-blue-800">
                 Tomas Antonio Vargas
                 </h1>
-              <h2 className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-blue-500 inline-block text-transparent bg-clip-text sm:text-3xl">Full Stack Developer</h2>
+              <Typewriter options={{
+                strings: [
+                  'Full Stack Developer', 
+                  'Cyclist',
+                  'Skier',
+                  'Skateboarder',
+                  'Musician',
+                  'Software Engineer'
+              ],
+                autoStart: true,
+                loop: true,
+                wrapperClassName: 'mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-blue-500 inline-block text-transparent bg-clip-text sm:text-3xl',
+                cursorClassName: 'mt-2 text-3xl font-bold inline-block sm:text-3xl animate-pulse'
+              }}
+              className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-blue-500 inline-block text-transparent bg-clip-text sm:text-3xl"
+              />
               <p className="mt-6 text-xl leading-8 text-blue-900">
                 Currently residing in <span className='text-orange-500'>Salt Lake City, Utah</span>
                 , and originally from the New York City metro area, my dev journey started after graduating with a B.S. in Business 
