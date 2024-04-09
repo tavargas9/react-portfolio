@@ -54,11 +54,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
                             </span> 
                         </Button>
                         <Button
-                            onClick={() => window.open(project.href, '_blank')}
+                            onClick={() => window.open(project.repo, '_blank')}
                             className="rounded-full group flex items-center justify-center p-0.5 text-center font-medium relative focus:z-10 focus:outline-none text-white bg-gradient-to-r from-blue-500 to-orange-500 enabled:hover:bg-gradient-to-l focus:ring-blue-200 dark:focus:ring-blue-800 rounded-full focus:ring-2"
                             ripple={false}
                         >
-                            <span className='items-center flex justify-center bg-white text-blue-900 transition-all duration-75 ease-in group-enabled:group-hover:bg-opacity-0 group-enabled:group-hover:text-inherit dark:bg-gray-900 dark:text-white w-full rounded-full text-sm px-4 py-2 border border-transparent'>
+                            <span className='items-center flex justify-center text-white transition-all duration-75 ease-in group-enabled:group-hover:bg-opacity-0 group-enabled:group-hover:text-inherit dark:bg-gray-900 dark:text-white w-full rounded-full text-sm px-4 py-2 border border-transparent'>
                                 View Code <FontAwesomeIcon icon={faCode} className="ml-2"/>
                             </span> 
                         </Button>
