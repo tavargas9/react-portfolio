@@ -30,6 +30,8 @@ To access this project locally, clone or fork the repository. Open in you IDE of
 
 ## Usage
 
+Check out my deployed portfolio [here!](https://tomasvargas.dev)
+
 <img width="1080" src="./src/assets/ui_example.png" alt="screenshot of homepage">
 
 Head to ```/src/components/``` in the project directory to view and edit each individual component. Navigate to ```/src/pages/``` to view each individual page.
