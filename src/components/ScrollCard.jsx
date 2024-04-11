@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import emp_tracker from '../assets/emp_tracker.png'
 import snapi from '../assets/snapi.png'
+import jate from '../assets/jate.png'
 
 export default function ScrollCard() {
 
@@ -11,6 +12,13 @@ export default function ScrollCard() {
     };
 
     const projects = [
+        {
+            name: 'JATE Text Editor',
+            href: 'https://jate-text-editor-kpic.onrender.com/',
+            desc: 'A PWA text editor built with Webpack, Node, and Express. (This app is deployed using free version of Render, please allow 50 seconds or more to spin up.)',
+            img: jate,
+            repo: 'https://github.com/tavargas9/JATE-Text-Editor'
+        },
         { 
             name: 'Weather Daddy', 
             href: 'https://tavargas9.github.io/weather-daddy/', 

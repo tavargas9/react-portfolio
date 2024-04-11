@@ -6,8 +6,16 @@ import dish_disc from './assets/dish_disc.png'
 import ecom_api from './assets/ecom_api.png'
 import notetakr from './assets/notetakr.png'
 import wd_sched from './assets/wd_sched.png'
+import jate from './assets/jate.png'
 
 const projects = [
+    {
+        name: 'JATE Text Editor',
+        href: 'https://jate-text-editor-kpic.onrender.com/',
+        desc: 'A PWA text editor built with Webpack, Node, and Express. (This app is deployed using free version of Render, please allow 50 seconds or more to spin up.)',
+        img: jate,
+        repo: 'https://github.com/tavargas9/JATE-Text-Editor'
+    },
     { 
         name: 'Weather Daddy', 
         href: 'https://tavargas9.github.io/weather-daddy/', 
