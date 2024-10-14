@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { elementType } from "prop-types";
 import tj2 from "../assets/tj2.png"
 import Typewriter from 'typewriter-effect'
+import tj3 from "../assets/tj3.jpeg"
 
 export default function Content() {
     const scrollTo = () => {
@@ -43,7 +44,7 @@ export default function Content() {
                 Currently residing in <span className='text-orange-500'>Salt Lake City, Utah</span>
                 , and originally from the New York City metro area, my dev journey started after graduating with a B.S. in Business 
                 from <span className='text-orange-500'>Syracuse University</span> and attending the 
-                <span className='text-orange-500'> University of Utah</span> Coding Bootcamp.
+                <span className='text-orange-500'> University of Utah</span> Full Stack Development Bootcamp.
               </p>
               <div className='mt-8 flex justify-evenly items-center'>
                 <button 
@@ -68,7 +69,7 @@ export default function Content() {
         </div>
         <div className="-mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            className="w-xl max-w-full rounded-full bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            className="object-cover w-xl max-w-full rounded-full bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] sm:h-[35rem]"
             src={tj2}
             alt=""
           />
