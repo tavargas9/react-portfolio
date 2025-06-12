@@ -12,7 +12,7 @@ export default function Content() {
     };
 
     const linkToResume = () => {
-      window.open('https://docs.google.com/document/d/1GGgOg79XssZUwLwDPxBqFXk19thKYPebRwL9RNlLg0c/edit?usp=sharing', '_blank')
+      window.open('https://drive.google.com/file/d/1eoqIlU2R9CrNXaiEweDFZbtF1me_1RlO/view?usp=sharing', '_blank')
     }
 
   return (
